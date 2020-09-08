@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Architects Daughter', cursive;
+  background-color: #1a1a1a;
+}
+
+body {
+  width: 50%;
+  max-width: 800px;
+  min-width: 480px;
+  margin: 1rem auto;
+  color: #FFF;
+}
+
+body h1 {
+  border-bottom: 1px solid #e73636;
+}
+
+.form .campoPalpite {
+  background-color: #e73636;
+  border-radius: 0.8rem;
+  outline: none;
+}
+
+.form .envioPalpite {
+  background-color: #FFF;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.form .envioPalpite:hover {
+  background-color: #f1f1f1;
+}
+
+button {
+  background-color: #FFF;
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 0;
+  outline: none;
+  font-family: 'Lexend Peta', sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+}
+
+.lastResult {
+  color: white;
+  padding: 3px;
+}
+
+.container {
+  width: 540px;
+  height: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e73636;
+  position: absolute;
+}
+
+.ball-1 {
+  top: 40%;
+  left: 20%;
+  -webkit-animation: ball-1 2s ease infinite alternate;
+          animation: ball-1 2s ease infinite alternate;
+}
+
+.ball-2 {
+  top: 40%;
+  left: 60%;
+  -webkit-animation: ball-2 2s ease infinite alternate;
+          animation: ball-2 2s ease infinite alternate;
+}
+
+@-webkit-keyframes ball-1 {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 60%;
+  }
+}
+
+@keyframes ball-1 {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 60%;
+  }
+}
+
+@-webkit-keyframes ball-2 {
+  from {
+    left: 60%;
+  }
+  to {
+    left: 30%;
+  }
+}
+
+@keyframes ball-2 {
+  from {
+    left: 60%;
+  }
+  to {
+    left: 30%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
